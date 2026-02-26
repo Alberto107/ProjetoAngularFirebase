@@ -1,6 +1,17 @@
 <ion-content [fullscreen]="true">
 
-    <ion-button color="secondary">Teste</ion-button>
+    <!-- *ngFOR="let produto of " -> para criar uma variável só dentro do bloco
+     iremos usar o for para pegar um objeto, mas ele está em outra página, então iremos usar o this
+     
+     {{}} -> mustache (bigode)-->
+
+    <ion-row *ngFor="let produto of this.lista_compras">
+        <ion-col size="auto">Nome: {{ produto.nome }} </ion-col>
+        <ion-col size="auto">Marca: {{ produto.marca }} </ion-col>
+        <ion-col size="auto">Preço: {{ produto.preco }} </ion-col>
+        <ion-col size="auto" *ngIf="produto.promocao" style="color:green">Promoção: Sim</ion-col>
+        <ion-col size="auto" *ngIf="!produto.promocao" style="color:red">Promoção: Não</ion-col>
+    </ion-row>
     
     
 </ion-content>
