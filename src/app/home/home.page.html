@@ -1,6 +1,72 @@
 <ion-content [fullscreen]="true">
 
-    <ion-button color="secondary">Teste</ion-button>
-    
-    
+    <!-- botaum hamburguin :) -->
+
+    <ion-menu contentId="main-content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Menu Content</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+            <ion-row>
+                <ion-col size="3">
+                    <ion-avatar>
+                        <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img6345c93937d108.12455732.jpg?lastEdited=1665517885&w=600&h=600&f=webp" alt="">
+                    </ion-avatar>
+                </ion-col>
+                <ion-col size="9">
+                    <ion-item>
+                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                    </ion-item>
+                    <ion-item>
+                        bs@hotmail.com
+                    </ion-item>
+                    <ion-item>
+                        wow
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                    <ion-icon name="compass-outline" slot="end"></ion-icon>
+                    <ion-label>Temas</ion-label>
+                </ion-item> 
+                <ion-item>
+                    <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
+                    <ion-label>Resetar senha</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="color-filter-outline" slot="end"></ion-icon>
+                    <ion-label>Desativar o autismo</ion-label>
+                </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-content>
+    </ion-menu>
+
+    <!-- corpo -->
+
+
+    <div class="ion-page" id="main-content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Sistema v1.0</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+            <ion-row>
+                <ion-col size="12">
+                    <ion-datetime>
+                    </ion-datetime>
+                </ion-col>
+            </ion-row>
+        </ion-content>
+    </div>
+
+
 </ion-content>
